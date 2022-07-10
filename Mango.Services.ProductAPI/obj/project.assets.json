@@ -2203,11 +2203,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\3-Repositorios\\.NET-repos\\mango-webservice\\Mango.Services.ProductAPI\\Mango.Services.ProductAPI.csproj",
+      "projectUniqueName": "D:\\3-Repositorios\\.NET-repos\\mango-microservice\\Mango.Services.ProductAPI\\Mango.Services.ProductAPI.csproj",
       "projectName": "Mango.Services.ProductAPI",
-      "projectPath": "D:\\3-Repositorios\\.NET-repos\\mango-webservice\\Mango.Services.ProductAPI\\Mango.Services.ProductAPI.csproj",
+      "projectPath": "D:\\3-Repositorios\\.NET-repos\\mango-microservice\\Mango.Services.ProductAPI\\Mango.Services.ProductAPI.csproj",
       "packagesPath": "C:\\Users\\julian\\.nuget\\packages\\",
-      "outputPath": "D:\\3-Repositorios\\.NET-repos\\mango-webservice\\Mango.Services.ProductAPI\\obj\\",
+      "outputPath": "D:\\3-Repositorios\\.NET-repos\\mango-microservice\\Mango.Services.ProductAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

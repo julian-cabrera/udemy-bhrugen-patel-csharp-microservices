@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sf9P6Y/xJ0rOIA3/J83/jGA5rC4pp0ZjaG1CIRc5673LshJqmlm9dQNbjI7ZcMMX26k+Cv9E3/qxm5jK44b66A==",
+  "dgSpecHash": "n0gxk3SUmMFmlTf2M9E1fnEqfxLNeABAppt5vGQ+i2bizSB/d1pkSComf09z8aUuEAQGefKQwzbKYyiI0t2axA==",
   "success": true,
-  "projectFilePath": "D:\\3-Repositorios\\.NET-repos\\mango-webservice\\Mango.Services.Identity\\Mango.Services.Identity.csproj",
+  "projectFilePath": "D:\\3-Repositorios\\.NET-repos\\mango-microservice\\Mango.Services.Identity\\Mango.Services.Identity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\julian\\.nuget\\packages\\duende.identityserver\\6.1.1\\duende.identityserver.6.1.1.nupkg.sha512",
     "C:\\Users\\julian\\.nuget\\packages\\duende.identityserver.aspnetidentity\\6.1.1\\duende.identityserver.aspnetidentity.6.1.1.nupkg.sha512",

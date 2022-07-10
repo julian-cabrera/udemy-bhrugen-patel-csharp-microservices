@@ -1635,11 +1635,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\3-Repositorios\\.NET-repos\\mango-webservice\\Mango.Web\\Mango.Web.csproj",
+      "projectUniqueName": "D:\\3-Repositorios\\.NET-repos\\mango-microservice\\Mango.Web\\Mango.Web.csproj",
       "projectName": "Mango.Web",
-      "projectPath": "D:\\3-Repositorios\\.NET-repos\\mango-webservice\\Mango.Web\\Mango.Web.csproj",
+      "projectPath": "D:\\3-Repositorios\\.NET-repos\\mango-microservice\\Mango.Web\\Mango.Web.csproj",
       "packagesPath": "C:\\Users\\julian\\.nuget\\packages\\",
-      "outputPath": "D:\\3-Repositorios\\.NET-repos\\mango-webservice\\Mango.Web\\obj\\",
+      "outputPath": "D:\\3-Repositorios\\.NET-repos\\mango-microservice\\Mango.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

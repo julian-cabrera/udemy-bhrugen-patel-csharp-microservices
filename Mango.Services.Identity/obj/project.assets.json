@@ -2440,11 +2440,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\3-Repositorios\\.NET-repos\\mango-webservice\\Mango.Services.Identity\\Mango.Services.Identity.csproj",
+      "projectUniqueName": "D:\\3-Repositorios\\.NET-repos\\mango-microservice\\Mango.Services.Identity\\Mango.Services.Identity.csproj",
       "projectName": "Mango.Services.Identity",
-      "projectPath": "D:\\3-Repositorios\\.NET-repos\\mango-webservice\\Mango.Services.Identity\\Mango.Services.Identity.csproj",
+      "projectPath": "D:\\3-Repositorios\\.NET-repos\\mango-microservice\\Mango.Services.Identity\\Mango.Services.Identity.csproj",
       "packagesPath": "C:\\Users\\julian\\.nuget\\packages\\",
-      "outputPath": "D:\\3-Repositorios\\.NET-repos\\mango-webservice\\Mango.Services.Identity\\obj\\",
+      "outputPath": "D:\\3-Repositorios\\.NET-repos\\mango-microservice\\Mango.Services.Identity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -2204,11 +2204,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\3-Repositorios\\.NET-repos\\mango-webservice\\Mango.Services.ShoppingCartAPI\\Mango.Services.ShoppingCartAPI.csproj",
+      "projectUniqueName": "D:\\3-Repositorios\\.NET-repos\\mango-microservice\\Mango.Services.ShoppingCartAPI\\Mango.Services.ShoppingCartAPI.csproj",
       "projectName": "Mango.Services.ShoppingCartAPI",
-      "projectPath": "D:\\3-Repositorios\\.NET-repos\\mango-webservice\\Mango.Services.ShoppingCartAPI\\Mango.Services.ShoppingCartAPI.csproj",
+      "projectPath": "D:\\3-Repositorios\\.NET-repos\\mango-microservice\\Mango.Services.ShoppingCartAPI\\Mango.Services.ShoppingCartAPI.csproj",
       "packagesPath": "C:\\Users\\julian\\.nuget\\packages\\",
-      "outputPath": "D:\\3-Repositorios\\.NET-repos\\mango-webservice\\Mango.Services.ShoppingCartAPI\\obj\\",
+      "outputPath": "D:\\3-Repositorios\\.NET-repos\\mango-microservice\\Mango.Services.ShoppingCartAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
