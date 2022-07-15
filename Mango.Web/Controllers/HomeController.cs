@@ -15,11 +15,13 @@ namespace Mango.Web.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IProductService _productService;
+        private readonly ICartService _cartService;
 
-        public HomeController(ILogger<HomeController> logger, IProductService productService)
+        public HomeController(ILogger<HomeController> logger, IProductService productService, ICartService cartService)
         {
             _logger = logger;
             _productService = productService;
+            _cartService = cartService;
         }
 
         public async Task<IActionResult> Index()
@@ -33,6 +35,7 @@ namespace Mango.Web.Controllers
             return View(list);
         }
 
+        
         [Authorize]
         public async Task<IActionResult> Details(int productId)
         {
@@ -43,6 +46,42 @@ namespace Mango.Web.Controllers
                 model = JsonConvert.DeserializeObject<ProductDTO>(Convert.ToString(response.Result));
             }
             return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Details")]
+        [Authorize]
+        public async Task<IActionResult> DetailsPost(ProductDTO productDTO)
+        {
+            CartDTO cartDTO = new()
+            {
+                CartHeader = new CartHeaderDTO()
+                {
+                    UserId = User.Claims.Where(x => x.Type == "sub")?.FirstOrDefault()?.Value
+                }
+            };
+            CartDetailsDTO cartDetails = new CartDetailsDTO()
+            {
+                Count = productDTO.Count,
+                ProductId = productDTO.ProductId,
+            };
+            var response = await _productService.GetProductByIdAsync<ResponseDTO>(productDTO.ProductId, "");
+            if(response != null && response.IsSuccess)
+            {
+                cartDetails.Product = JsonConvert.DeserializeObject<ProductDTO>(Convert.ToString(response.Result));
+            }
+            List<CartDetailsDTO> cartDetailsList = new();
+            cartDetailsList.Add(cartDetails);
+            cartDTO.CartDetails = cartDetailsList;
+
+            var accessToken = await HttpContext.GetTokenAsync("access_token");
+            var addToCartResponse = await _cartService.AddToCartAsync<ResponseDTO>(cartDTO, accessToken);
+            if (addToCartResponse != null && addToCartResponse.IsSuccess)
+            {
+                //cartDetails.Product = JsonConvert.DeserializeObject<ProductDTO>(Convert.ToString(addToCartResponse.Result));
+                return RedirectToAction(nameof(Index));
+            }
+            return View(productDTO);
         }
 
         public IActionResult Privacy()
