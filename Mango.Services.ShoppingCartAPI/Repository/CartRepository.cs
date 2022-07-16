@@ -30,48 +30,48 @@ namespace Mango.Services.ShoppingCartAPI.Repository
 
         public async Task<CartDTO> CreateUpdateCart(CartDTO cartDTO)
         {
-            Cart cart = _mapper.Map<Cart>(cartDTO);
-            var product = await _context.Products.FirstOrDefaultAsync(x => x.ProductId == cartDTO.CartDetails.FirstOrDefault().ProductId);
+                Cart cart = _mapper.Map<Cart>(cartDTO);
+                var product = await _context.Products.FirstOrDefaultAsync(x => x.ProductId == cartDTO.CartDetails.FirstOrDefault().ProductId);
 
-            if (product == null)
-            {
-                _context.Products.Add(cart.CartDetails.FirstOrDefault().Product);
-                await _context.SaveChangesAsync();
-            }
-
-            var cartHeader = _context.CartHeaders.AsNoTracking().FirstOrDefaultAsync(x => x.UserId == cart.CartHeader.UserId);
-
-            if (cartHeader == null)
-            {
-                _context.CartHeaders.Add(cart.CartHeader);
-                await _context.SaveChangesAsync();
-                cart.CartDetails.FirstOrDefault().CartHeaderId = cart.CartHeader.CartHeaderId;
-                cart.CartDetails.FirstOrDefault().Product = null;
-                _context.CartDetails.Add(cart.CartDetails.FirstOrDefault());
-                await _context.SaveChangesAsync();
-            }
-            else
-            {
-                var cartDetails = await _context.CartDetails.AsNoTracking().FirstOrDefaultAsync(x =>
-                    x.ProductId == cart.CartDetails.FirstOrDefault().ProductId &&
-                    x.CartHeaderId == cartHeader.Result.CartHeaderId);
-
-                if(cartDetails == null)
+                if (product == null)
                 {
-                    cart.CartDetails.FirstOrDefault().CartHeaderId = cartHeader.Result.CartHeaderId;
+                    _context.Products.Add(cart.CartDetails.FirstOrDefault().Product);
+                    await _context.SaveChangesAsync();
+                }
+
+                 var cartHeader = _context.CartHeaders.AsNoTracking().FirstOrDefaultAsync(x => x.UserId == cart.CartHeader.UserId);
+
+                if (cartHeader.Result == null)
+                {
+                    _context.CartHeaders.Add(cart.CartHeader);
+                    await _context.SaveChangesAsync();
+                    cart.CartDetails.FirstOrDefault().CartHeaderId = cart.CartHeader.CartHeaderId;
                     cart.CartDetails.FirstOrDefault().Product = null;
                     _context.CartDetails.Add(cart.CartDetails.FirstOrDefault());
                     await _context.SaveChangesAsync();
                 }
                 else
                 {
-                    cart.CartDetails.FirstOrDefault().Count += cartDetails.Count;
-                    cart.CartDetails.FirstOrDefault().Product = null;
-                    _context.CartDetails.Update(cart.CartDetails.FirstOrDefault());
-                    await _context.SaveChangesAsync();
+                    var cartDetails = await _context.CartDetails.AsNoTracking().FirstOrDefaultAsync(x =>
+                        x.ProductId == cart.CartDetails.FirstOrDefault().ProductId &&
+                        x.CartHeaderId == cartHeader.Result.CartHeaderId);
+
+                    if (cartDetails == null)
+                    {
+                        cart.CartDetails.FirstOrDefault().CartHeaderId = cartHeader.Result.CartHeaderId;
+                        cart.CartDetails.FirstOrDefault().Product = null;
+                        _context.CartDetails.Add(cart.CartDetails.FirstOrDefault());
+                        await _context.SaveChangesAsync();
+                    }
+                    else
+                    {
+                        cart.CartDetails.FirstOrDefault().Count += cartDetails.Count;
+                        cart.CartDetails.FirstOrDefault().Product = null;
+                        _context.CartDetails.Update(cart.CartDetails.FirstOrDefault());
+                        await _context.SaveChangesAsync();
+                    }
                 }
-            }
-            return _mapper.Map<CartDTO>(cart); ;
+            return _mapper.Map<CartDTO>(cart);
         }
 
         public async Task<CartDTO> GetCartByUserId(string userId)
