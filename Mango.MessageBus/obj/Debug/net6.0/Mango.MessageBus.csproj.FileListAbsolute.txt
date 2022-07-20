@@ -1,0 +1,12 @@
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.MessageBus\bin\Debug\net6.0\Mango.MessageBus.deps.json
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.MessageBus\bin\Debug\net6.0\Mango.MessageBus.dll
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.MessageBus\bin\Debug\net6.0\Mango.MessageBus.pdb
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.MessageBus\obj\Debug\net6.0\Mango.MessageBus.csproj.AssemblyReference.cache
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.MessageBus\obj\Debug\net6.0\Mango.MessageBus.GeneratedMSBuildEditorConfig.editorconfig
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.MessageBus\obj\Debug\net6.0\Mango.MessageBus.AssemblyInfoInputs.cache
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.MessageBus\obj\Debug\net6.0\Mango.MessageBus.AssemblyInfo.cs
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.MessageBus\obj\Debug\net6.0\Mango.MessageBus.csproj.CoreCompileInputs.cache
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.MessageBus\obj\Debug\net6.0\Mango.MessageBus.dll
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.MessageBus\obj\Debug\net6.0\refint\Mango.MessageBus.dll
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.MessageBus\obj\Debug\net6.0\Mango.MessageBus.pdb
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.MessageBus\obj\Debug\net6.0\ref\Mango.MessageBus.dll

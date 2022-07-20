@@ -64,3 +64,11 @@ D:\3-Repositorios\.NET-repos\mango-microservice\Mango.Services.ShoppingCartAPI\o
 D:\3-Repositorios\.NET-repos\mango-microservice\Mango.Services.ShoppingCartAPI\obj\Debug\net6.0\Mango.Services.ShoppingCartAPI.pdb
 D:\3-Repositorios\.NET-repos\mango-microservice\Mango.Services.ShoppingCartAPI\obj\Debug\net6.0\Mango.Services.ShoppingCartAPI.genruntimeconfig.cache
 D:\3-Repositorios\.NET-repos\mango-microservice\Mango.Services.ShoppingCartAPI\obj\Debug\net6.0\ref\Mango.Services.ShoppingCartAPI.dll
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.Services.ShoppingCartAPI\bin\Debug\net6.0\Microsoft.Azure.Amqp.dll
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.Services.ShoppingCartAPI\bin\Debug\net6.0\Mango.MessageBus.dll
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.Services.ShoppingCartAPI\bin\Debug\net6.0\Mango.MessageBus.pdb
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.Services.ShoppingCartAPI\bin\Debug\net6.0\Azure.Core.dll
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.Services.ShoppingCartAPI\bin\Debug\net6.0\Azure.Core.Amqp.dll
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.Services.ShoppingCartAPI\bin\Debug\net6.0\Azure.Messaging.ServiceBus.dll
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.Services.ShoppingCartAPI\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\3-Repositorios\.NET-repos\mango-microservice\Mango.Services.ShoppingCartAPI\bin\Debug\net6.0\System.Memory.Data.dll
