@@ -96,7 +96,7 @@ namespace Mango.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ProductDelete(ProductDTO model)
         {
-            if (ModelState.IsValid)
+            if (model.ProductId > 0)
             {
                 var token = await HttpContext.GetTokenAsync("access_token");
                 var response = await _productService.DeleteProductAsync<ResponseDTO>(model.ProductId, token);

@@ -40,7 +40,6 @@ namespace Mango.Services.ProductAPI.Repository
                 
                 if(product == null) 
                     return false;
-
                 _context.Products.Remove(product);
                 await _context.SaveChangesAsync();
                 return true;
