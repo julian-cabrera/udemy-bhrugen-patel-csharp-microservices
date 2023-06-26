@@ -32,9 +32,7 @@ namespace Mango.Services.Identity
                 AllowedGrantTypes = GrantTypes.ClientCredentials,
                 AllowedScopes = { "read", "write", "profile" },
                 RedirectUris = {
-                    "https://localhost:44339/signin-oidc", 
-                    //"https://localhost:7120/signin-oidc", 
-                    //"http://localhost:26910/signin-oidc" 
+                    "https://localhost:44339/signin-oidc"
                 },
                 PostLogoutRedirectUris = {"https://localhost:44339/signout-callback-oidc" }
             },

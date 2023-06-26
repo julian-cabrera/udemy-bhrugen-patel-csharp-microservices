@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Authentication;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 SD.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
 SD.ShoppingCartAPIBase = builder.Configuration["ServiceUrls:ShoppingCartAPI"];
 SD.CouponAPIBase = builder.Configuration["ServiceUrls:CouponAPI"];
@@ -28,7 +27,7 @@ builder.Services.AddAuthentication(options =>
 })
     .AddCookie("Cookies", c => c.ExpireTimeSpan = TimeSpan.FromMinutes(10))
     .AddOpenIdConnect("oidc", options =>
-    {//JwtSecurityTokenHandler.DefaultMapInboundClaims = false
+    {
         options.Authority = builder.Configuration["ServiceUrls:IdentityAPI"];
         options.GetClaimsFromUserInfoEndpoint = true;
         options.ClientId = "mango";

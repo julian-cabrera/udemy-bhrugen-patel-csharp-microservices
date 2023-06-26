@@ -2,7 +2,6 @@
 using Mango.Web.Service.IService;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 

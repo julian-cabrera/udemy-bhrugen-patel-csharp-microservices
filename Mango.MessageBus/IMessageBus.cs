@@ -1,5 +1,4 @@
-﻿
-namespace Mango.MessageBus;
+﻿namespace Mango.MessageBus;
 
 public interface IMessageBus
 {

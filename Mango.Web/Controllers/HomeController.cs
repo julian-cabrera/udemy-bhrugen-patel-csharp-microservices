@@ -4,10 +4,8 @@ using Mango.Web.Service.IService;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Net.Http.Headers;
 using Newtonsoft.Json;
 using System.Diagnostics;
-using System.Security.Claims;
 
 namespace Mango.Web.Controllers
 {
@@ -78,7 +76,6 @@ namespace Mango.Web.Controllers
             var addToCartResponse = await _cartService.AddToCartAsync<ResponseDTO>(cartDTO, accessToken);
             if (addToCartResponse != null && addToCartResponse.IsSuccess)
             {
-                //cartDetails.Product = JsonConvert.DeserializeObject<ProductDTO>(Convert.ToString(addToCartResponse.Result));
                 return RedirectToAction(nameof(Index));
             }
             return View(productDTO);
